@@ -34,6 +34,9 @@ PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := derp_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
+IS_PHONE := true
+
+DERP_BUILDTYPE := Official
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
