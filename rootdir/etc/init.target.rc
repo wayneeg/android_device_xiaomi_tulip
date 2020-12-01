@@ -41,6 +41,11 @@ on init
     write /dev/stune/foreground/schedtune.colocate 0
     write /dev/stune/top-app/schedtune.colocate 1
 
+    # DT2W
+    chown system system /proc/tp_gesture
+    chmod 0660 /proc/tp_gesture
+    write /proc/tp_gesture 1
+
     # Add a cpuset for the camera daemon
     mkdir /dev/cpuset/camera-daemon 0750 cameraserver cameraserver
     write /dev/cpuset/camera-daemon/cpus 0-7
