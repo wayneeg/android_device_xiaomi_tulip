@@ -21,6 +21,20 @@
 # definition file).
 #
 
+# Hardware
+PRODUCT_BOARD_PLATFORM := msm8998
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8998/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8998/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8998/media
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/msm8998
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -644,3 +658,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
    XiaomiParts
+
+
