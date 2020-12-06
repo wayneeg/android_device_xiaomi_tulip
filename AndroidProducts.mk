@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_tulip.mk
+    $(LOCAL_DIR)/omni_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-   derp_tulip-user \
-   derp_tulip-userdebug \
-   derp_tulip-eng
+   omni_tulip-user \
+   omni_tulip-userdebug \
+   omni_tulip-eng
