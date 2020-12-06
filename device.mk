@@ -45,6 +45,20 @@ $(call inherit-product, $(DEVICE_PATH)/common_prop.mk)
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
+# Hardware
+PRODUCT_BOARD_PLATFORM := msm8998
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+#SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8998/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8998/display
+#SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8998/media
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/msm8998
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -531,11 +545,11 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     rild \
-    telephony-ext
+#    telephony-ext
 
 # RIL JAR
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
