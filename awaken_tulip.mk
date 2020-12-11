@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/awaken/config/common.mk)
 
 # Inherit from tulip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -32,20 +32,18 @@ TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := derp_tulip
+PRODUCT_NAME := awaken_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 IS_PHONE := true
-
-DERP_BUILDTYPE := Official
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := tulip
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="tulip-user 9 PKQ1.180904.001 V11.0.6.0.PEKMIXM release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.201205.011 6966805 release-keys"
 
 #Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RD1A.201105.003.C1/6886399:user/release-keys"    
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.201205.011/6966805:user/release-keys"    
 
 
