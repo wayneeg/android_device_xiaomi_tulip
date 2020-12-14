@@ -41,9 +41,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product-if-exists, build/target/product/embedded.mk)
 
 # Enable updating of APEXes
-ifeq ($(ENABLE_APEX), true)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-endif
 
 #Gapps
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
