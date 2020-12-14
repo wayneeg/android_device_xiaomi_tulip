@@ -35,6 +35,20 @@ $(call inherit-product-if-exists, vendor/oplauncher/OPLauncher.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
 $(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
 
+# Hardware
+PRODUCT_BOARD_PLATFORM := msm8998
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+hardware/qcom-caf/msm8998
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8998/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8998/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8998/media
+
 # Device Tree Path
 DEVICE_PATH := device/xiaomi/tulip
 
