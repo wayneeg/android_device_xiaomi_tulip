@@ -19,7 +19,7 @@ set -e
 
 export DEVICE=tulip
 export VENDOR=xiaomi
-export DEVICE_BRINGUP_YEAR=2019
+export DEVICE_BRINGUP_YEAR=2020
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -29,11 +29,11 @@ if [[ -z "$DEVICE_DIR" ]]; then
     DEVICE_DIR="${MY_DIR}/../${DEVICE}"
 fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+CORVUS_ROOT="$MY_DIR"/../../..
 
 DEVICE_BLOB_ROOT="$AOSP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
-HELPER="$ROOT"/vendor/carbon/build/tools/extract_utils.sh
+HELPER="$ROOT"/vendor/corvus/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
