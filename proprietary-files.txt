@@ -171,6 +171,8 @@ vendor/lib64/soundfx/libasphere.so|f552a053f935299b3fd9be03a596eb4c40dee50e
 # Audio firmware - from vince
 etc/firmware/tas2557_uCDSP.bin:vendor/firmware/tas2557_uCDSP.bin|b8005b3aa2cb2340ababf3cc75777a1fe14becc6
 
+# Power-off charging daemon - from miui_CMI_20.9.28_171a6c0851_11.0.zip
+-bin/charger:bin/chargeonlymode|c745c3febb01b2b6a868a30ddb7bd8c1c343b3e7
 
 # Bluetooth - from LA.UM.8.2.r1-06700-sdm660.0
 lib/libbtconfigstore.so|b2765f77529c6bbad6eafc1e8b358ad9ce20d992
