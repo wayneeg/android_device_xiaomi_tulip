@@ -650,9 +650,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     GCamGo
 
-PRODUCT_PACKAGES += \
-    Dirac
-
 # Recorder
 PRODUCT_PACKAGES += \
     OPScreenRecorder
