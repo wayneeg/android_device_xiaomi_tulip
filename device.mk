@@ -648,7 +648,8 @@ PRODUCT_BOOT_JARS += \
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    GCamGo
+    GCamGo \
+    Gboard
 
 # Recorder
 PRODUCT_PACKAGES += \
