@@ -45,10 +45,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=jefinhodatnt
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sunfish-user 11 RQ1A.201205.008 6943376 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210105.003 7005429 release-keys"
 
 #Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ1A.201205.008/6943376:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys"
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
