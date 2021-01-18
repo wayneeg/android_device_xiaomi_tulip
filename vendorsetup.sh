@@ -1,0 +1,4 @@
+rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlay
+rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayWideBack
+rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayNarrowBack
+rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayExtraWideBack
