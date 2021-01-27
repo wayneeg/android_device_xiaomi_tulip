@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The Corvus Rom
+# Copyright (C) 2018-2019 The ssos Rom
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_tulip.mk
+    $(LOCAL_DIR)/ssos_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-   corvus_tulip-user \
-   corvus_tulip-userdebug \
-   corvus_tulip-eng
+   ssos_tulip-user \
+   ssos_tulip-userdebug \
+   ssos_tulip-eng
