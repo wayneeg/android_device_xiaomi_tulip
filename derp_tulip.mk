@@ -36,7 +36,9 @@ PRODUCT_NAME := derp_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 IS_PHONE := true
 
+# DerpFest stuffs
 DERP_BUILDTYPE := Official
+TARGET_USES_BLUR := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
