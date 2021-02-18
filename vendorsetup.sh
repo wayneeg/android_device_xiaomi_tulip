@@ -9,4 +9,4 @@ rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayWideBac
 rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayNarrowBack
 rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayExtraWideBack
 cd kernel/xiaomi/tulip && git pull -q --force && cd ../../..
-lunch octavi_tulip-userdebug
+lunch superior_tulip-userdebug

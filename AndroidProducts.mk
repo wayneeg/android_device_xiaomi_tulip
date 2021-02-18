@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_tulip.mk
+    $(LOCAL_DIR)/superior_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-   octavi_tulip-user \
-   octavi_tulip-userdebug \
-   octavi_tulip-eng
+   superior_tulip-user \
+   superior_tulip-userdebug \
+   superior_tulip-eng
