@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stag_tulip.mk
+    $(LOCAL_DIR)/aosip_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-   stag_tulip-user \
-   stag_tulip-userdebug \
-   stag_tulip-eng
+   aosip_tulip-user \
+   aosip_tulip-userdebug \
+   aosip_tulip-eng
