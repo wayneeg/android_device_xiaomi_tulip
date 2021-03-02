@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/wave/configs/common.mk)
 
 # Inherit from tulip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -32,12 +32,18 @@ TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosip_tulip
+PRODUCT_NAME := wave_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 IS_PHONE := true
 
-# aosip STUFFS
+# wave STUFFS
+TARGET_USES_AOSP_CHARGER := true
 TARGET_USES_BLUR := true
+WITH_GAPPS := true
+
+# WaveOS Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+     ro.wave.maintainer=wayneegds
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
