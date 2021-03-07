@@ -663,3 +663,7 @@ PRODUCT_PACKAGES += \
     init.cpuboost.sh \
     init.parallax.rc \
     init.parallax.sh
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
