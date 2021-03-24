@@ -300,16 +300,12 @@ PRODUCT_BOOT_JARS += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common \
+    ims-ext-common_system \
     ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
 
+# IMS JAR
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    ims-ext-common_system
 
 # Init
 PRODUCT_PACKAGES += \
